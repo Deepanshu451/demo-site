@@ -43,7 +43,7 @@ body {
   margin-top: 15px;
 }
 
-.navbar-brand p span{
+.navbar-brand p span#desc{
   vertical-align: middle;
   font-family: 'Shizuru', cursive;
 }
@@ -87,10 +87,35 @@ body {
 /****** large devices ******/
 @media (min-width: 1200px){
 
+  .jumbotron{
+    background: url('../images/1200/home3_ccexpress.jpeg') no-repeat;
+    height: 675px;
+    box-shadow: 0 0 50px #ffffff;
+    border: 2px solid black;
+    animation: slider 32s infinite linear;
+    }
+     /**** ANIMATION *****/
+ @keyframes slider{
+  0%{ background: url('../images/1200/home3_ccexpress.jpeg') no-repeat; }
+  12.5%{ background: url('../images/1200/home_ccexpress.jpeg') no-repeat; }
+  25%{ background: url('../images/1200/home2_ccexpress.jpeg') no-repeat; }
+  37.5%{ background: url('../images/1200/home4_ccexpress.jpeg') no-repeat; }
+  50%{ background: url('../images/1200/home5_ccexpress.jpeg') no-repeat; }
+  67.5%{ background: url('../images/1200/home6_ccexpress.jpeg') no-repeat; }
+  75%{ background: url('../images/1200/home7_ccexpress.jpeg') no-repeat; }
+  87.5%{ background: url('../images/1200/home8_ccexpress.jpeg') no-repeat; }
+}
 }
 
 /****** medium devices ******/
 @media (min-width: 992px) and (max-width: 1199px) {
+
+  .jumbotron{
+    background: url('../images/992/home5_ccexpress.jpeg') no-repeat;
+    height: 558px;
+    box-shadow: 0 0 50px #ffffff;
+    border: 2px solid black;
+    }
   
 }
 
@@ -99,9 +124,15 @@ body {
   .navbar-brand h1{
     margin-top: 0px;
   }
+  .jumbotron{
+    background: url('../images/768/home3_ccexpress.jpeg') no-repeat;
+    height: 432px;
+    box-shadow: 0 0 50px #ffffff;
+    border: 2px solid black;
+    }
 }
 
-/****** extra small devices ******/
+/****** extra small devices ******/ /*  MOBILE */
 @media(max-width: 767px){
   .navbar-brand{
     padding-top: 10px;
@@ -125,5 +156,19 @@ body {
   #collapsable-nav a span{
     font-size: 1em;
     margin-right: 5px;
+  }
+  #call-btn > a{
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #7751dc;
+    color: black;
+  }
+  #xs-deliver{
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
   }
 }
